@@ -1,5 +1,3 @@
-
-
 import Image from 'next/image';
 import styles from '../styles/about.module.css'; 
 
@@ -12,7 +10,7 @@ const About = () => {
           {/* Image Section */}
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile.JPG" 
               alt="Rana Bisma Qasim"
               className={styles.profileImage}
               width={150}
