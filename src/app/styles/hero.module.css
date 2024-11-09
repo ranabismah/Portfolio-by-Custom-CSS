@@ -1,0 +1,151 @@
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2, #ff9900); /* A multi-color gradient */
+  background-size: 400% 400%; /* Make it large to allow smooth transitions */
+  animation: backgroundAnimation 15s ease infinite; /* Background animation */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Keyframe Animation for the Background */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hero Content Styling */
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect for hero content */
+}
+
+/* Keyframe Animation for Fade-In Effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Start slightly above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Text Section */
+.heroText {
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.heroText h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #2980b9, #6dd5ed); /* Gradient color for the heading */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heroText p {
+  font-size: 1.3rem;
+  color: #ecf0f1;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.heroButton {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.heroButton:hover {
+  background-color: #16a085;
+  transform: scale(1.05);
+}
+
+/* Profile Image Section */
+.heroImage {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the image doesn’t overflow when animated */
+}
+
+/* Profile Image Styling with Animated Border */
+.profileImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease, border 0.3s ease; /* Transition for scale, opacity, and border */
+  animation: slideIn 2s ease-out; /* Slide-in animation for the image */
+  border: 4px solid transparent; /* Initial transparent border */
+  padding: 4px; /* Padding to show the border effect */
+  box-sizing: border-box;
+}
+
+/* Keyframe Animation for Image Sliding In */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Start off-screen on the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End in normal position */
+  }
+}
+
+/* Hover Effect for Profile Image (Scaling + Border Animation) */
+.heroImage:hover .profileImage {
+  transform: scale(1.1); /* Scale up the image slightly */
+  border: 4px solid #ff6b6b; /* Animated border color change */
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.8); /* Glow effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroText h1 {
+    font-size: 2.5rem;
+  }
+
+  .profileImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .heroButton {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+}

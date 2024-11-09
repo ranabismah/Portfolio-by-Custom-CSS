@@ -1,0 +1,56 @@
+/* src/app/styles/footer.module.css */
+
+.footer {
+  background-color: #333; /* Dark background color */
+  color: white; /* White text color */
+  padding: 20px; /* Padding around the footer */
+  text-align: center; /* Center-align the text */
+  position: relative; /* Ensure footer stays at the bottom of the page */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 14px; /* Font size for the copyright text */
+  margin-bottom: 10px; /* Space below the copyright text */
+}
+
+.socialLinks {
+  display: flex; /* Flexbox to align the social links horizontally */
+  justify-content: center; /* Center-align the social icons */
+  gap: 20px; /* Space between the icons */
+}
+
+.iconLink {
+  color: white; /* White color for the icons */
+  text-decoration: none; /* Remove the underline from links */
+  transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.iconLink:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.icon {
+  color: white; /* Default white color for the icons */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.iconLink:hover .icon {
+  color: #3498db; /* Change the icon color to blue on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px; /* Less padding on mobile */
+  }
+
+  .socialLinks {
+    gap: 15px; /* Smaller gap on mobile */
+  }
+
+  .footer p {
+    font-size: 12px; /* Smaller font size for copyright text on mobile */
+  }
+}

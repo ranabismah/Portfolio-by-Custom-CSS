@@ -1,0 +1,113 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #333; /* Dark background color */
+  padding: 10px 20px; /* Space around the nav items */
+  display: flex; /* Flexbox to arrange items horizontally */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center;
+  position: fixed; /* Fix navbar at the top */
+  top: 0; /* Align at the top of the page */
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure the navbar stays on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navbar */
+  flex-wrap: wrap; /* Allow navbar to wrap items when needed */
+  padding-right: 40px; /* Add extra padding on the right */
+}
+
+/* Logo Styles */
+.logo h2 {
+  color: #0c4c77; /* White color for logo text */
+  font-size: 24px; /* Font size for logo */
+  font-weight: bold; /* Bold font for the logo */
+  margin: 0;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none; /* Hide hamburger icon by default */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.hamburgerLine {
+  width: 30px; /* Hamburger lines width */
+  height: 4px; /* Hamburger lines height */
+  background-color: white; /* Line color */
+  border-radius: 5px;
+}
+
+/* Navigation Links Container */
+.navLinks {
+  display: flex; /* Flexbox to arrange nav items horizontally */
+  gap: 30px; /* Space between items */
+  align-items: center; /* Align items vertically */
+  padding: 0;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+/* Padding for each navigation item (button) */
+.navItem {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 18px; /* Font size */
+  font-weight: 500; /* Slightly bold text */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  padding: 12px 25px; /* Padding for each link/button */
+}
+
+.navItem:hover {
+  color: #3498db; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+.navItem:active {
+  color: #2980b9; /* Change color when the link is pressed */
+}
+
+/* Active Link Styling */
+.active {
+  color: #0c4c77; /* Highlight color for active link */
+  border-bottom: 2px solid #0c4c77; /* Underline active link */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center align the items */
+    padding: 10px; /* Adjust padding */
+  }
+
+  /* Show the hamburger icon on mobile */
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+  }
+
+  .navLinks {
+    display: none; /* Hide the nav links by default */
+    flex-direction: column; /* Stack the nav links vertically */
+    gap: 15px; /* Space between links */
+    align-items: center;
+    width: 100%; /* Full width to take up the screen */
+    padding-top: 10px;
+  }
+
+  /* Show the nav links when the menu is open */
+  .activeMenu {
+    display: flex;
+  }
+
+  .navItem {
+    font-size: 16px; /* Slightly smaller font size for mobile */
+    padding: 12px 25px; /* Same padding on mobile */
+    width: 100%; /* Take up full width of screen */
+    text-align: center; /* Center the text */
+  }
+}
+
+/* Add more margin to the Contact button (last item) */
+.navLinks .navItem:last-child {
+  margin-right: 20px; /* Add margin on the right side of the Contact button */
+}
