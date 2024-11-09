@@ -37,20 +37,18 @@ const Contact: React.FC = () => {
 
   // Handle form submission
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); 
-    setError(""); 
-    setSuccess(""); 
+    e.preventDefault();
+    setError("");
+    setSuccess("");
 
     // Check if required fields are filled
     if (!formData.firstname || !formData.email || !formData.message) {
       setError("Please fill out all required fields.");
-      return; 
+      return;
     }
 
-   
-    setSuccess("Your message has been sent successfully!"); 
+    setSuccess("Your message has been sent successfully!");
 
- 
     setFormData({
       firstname: "",
       lastname: "",
