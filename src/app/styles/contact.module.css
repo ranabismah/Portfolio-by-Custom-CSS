@@ -1,13 +1,13 @@
-/* Overall section styles with subtle background animation */
+
 .contactSection {
   padding: 50px 0;
-  background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Soft gradient of pink and blue */
-  background-size: 300% 300%; /* Allow the gradient to move smoothly */
-  animation: gradientAnimation 12s ease infinite; /* Animated background */
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee); 
+  background-size: 300% 300%; 
+  animation: gradientAnimation 12s ease infinite; 
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh; 
   position: relative;
   overflow: hidden;
 }
@@ -32,10 +32,10 @@
   margin: 0 auto;
   padding: 20px;
   color: white;
-  background: rgba(255, 255, 255, 0.1); /* Slight transparent white background */
+  background: rgba(255, 255, 255, 0.1); 
   border-radius: 15px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  animation: fadeInContainer 1.5s ease-out; /* Fade-in animation */
+  animation: fadeInContainer 1.5s ease-out; 
 }
 
 /* Fade-in animation for the container */
@@ -55,7 +55,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
-  animation: slideInFromLeft 1s ease-out; /* Slide-in effect for the heading */
+  animation: slideInFromLeft 1s ease-out;
 }
 
 /* Slide-in effect for the form header */
@@ -70,11 +70,11 @@
 
 /* Form container styles with a smooth glowing effect */
 .formContainer {
-  background: linear-gradient(145deg, #6a0dad, #4b0082); /* Soft purple gradient */
+  background: linear-gradient(145deg, #6a0dad, #4b0082); 
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  animation: glowEffect 2s ease-in-out infinite, bounceIn 1.2s ease-out; /* Glowing effect & bounce animation */
+  animation: glowEffect 2s ease-in-out infinite, bounceIn 1.2s ease-out; 
 }
 
 /* Bounce-in effect for the form container */
@@ -142,7 +142,7 @@
 .input:focus, .textarea:focus {
   border: 2px solid #6a0dad;
   background: #fff;
-  box-shadow: 0 0 5px rgba(106, 13, 173, 0.5); /* Subtle glowing effect */
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
 }
 
 /* Submit button styling */
@@ -159,16 +159,15 @@
 
 .submitButton:hover {
   background-color: #4b0082;
-  transform: translateY(-2px); /* Slight lift effect */
+  transform: translateY(-2px); 
 }
 
 .submitButton:active {
-  transform: translateY(0); /* Reset position when clicked */
-}
+  transform: translateY(0); 
 
 /* Error message styling with glowing animation */
 .error {
-  color: #ff6347; /* Tomato red color for errors */
+  color: #ff6347; 
   font-size: 1rem;
   margin-bottom: 15px;
   text-align: center;
@@ -244,4 +243,5 @@
   100% {
     box-shadow: 0px 0px 10px rgba(50, 205, 50, 0.5);
   }
+}
 }

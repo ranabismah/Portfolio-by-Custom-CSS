@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import styles from "../styles/navbar.module.css"; // Import CSS module for Navbar
+import styles from "../styles/navbar.module.css"; 
 
 const links = [
   { name: "Home", path: "/" },
@@ -13,14 +13,14 @@ const links = [
 
 const Navbar = () => {
   const pathname = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Toggle menu visibility on mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev); // Toggle the menu open/close on mobile
   };
 
   return (
-    // In your Navbar component
+    
 
 <div className={styles.navbar}>
   {/* Logo */}

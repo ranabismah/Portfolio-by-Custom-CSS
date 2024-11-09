@@ -7,7 +7,7 @@ const Footer = () => {
       <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
       <div className={styles.socialLinks}>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/ranabismah"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.iconLink}
@@ -15,7 +15,7 @@ const Footer = () => {
           <FaGithub size={24} className={styles.icon} /> {/* GitHub Icon */}
         </a>
         <a
-          href="https://www.linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/rana-bisma-qasim-537bab2bb/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.iconLink}

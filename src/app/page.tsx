@@ -1,9 +1,5 @@
-
-// src/app/page.tsx
-
-
-import Hero from './components/Hero'; // Import Hero component
-import About from './components/About'; // Import About component
+import Hero from './components/Hero'; 
+import About from './components/About'; 
 
 
 import Contact from './components/Contact';
@@ -12,8 +8,8 @@ const HomePage = () => {
   return (
     <div>
      
-      <Hero />    {/* Render the Hero section */}
-      <About />   {/* Render the About section */}
+      <Hero />    
+      <About />   
       <Contact/>
      
     </div>

@@ -1,8 +1,6 @@
-// src/app/components/Hero.tsx
-
-import styles from '../styles/hero.module.css'; // Import your styles
-import Image from 'next/image'; // Import Next.js Image component
-import Link from 'next/link'; // Import Link component from Next.js
+import styles from '../styles/hero.module.css'; 
+import Image from 'next/image'; 
+import Link from 'next/link'; 
 
 const Hero = () => {
   return (
@@ -21,12 +19,12 @@ const Hero = () => {
 
         {/* Profile image section */}
         <div className={styles.heroImage}>
-          {/* No need to import the image, just use the correct path */}
+          
           <Image
-            src="/images/profile.JPG" // Relative path to image in public folder
+            src="/images/profile.JPG" 
             alt="Rana Bisma Qasim"
-            width={250}  // Image size
-            height={250} // Image size
+            width={250}  
+            height={250}
             className={styles.profileImage}
           />
         </div>

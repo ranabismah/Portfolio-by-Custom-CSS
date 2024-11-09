@@ -1,8 +1,8 @@
-// src/app/components/About.tsx
 
-import Image from 'next/image'; // Import Image from next/image
-import styles from '../styles/about.module.css'; // Import styles for About page
-import profileImage from '../../public/images/profile.jpg'; // Path to your image file
+
+import Image from 'next/image';
+import styles from '../styles/about.module.css'; 
+
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
           {/* Image Section */}
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/profile.jpg" // Correct path to the image inside the public folder
+              src="/images/profile.jpg"
               alt="Rana Bisma Qasim"
               className={styles.profileImage}
               width={150}
